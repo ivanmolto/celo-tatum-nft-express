@@ -51,6 +51,13 @@ yarn install
 npm start
 ```
 
+## Security Notice
+
+The project is not audited and should not be used in a production environment.
+
+About your Tatum API Key remember never store sensitive secrets in your environment variables. The reason behind this is that the code is run on the client side and thus including your environment variable in the code itself.
+You can read more about this topic [here](https://reactnative.dev/docs/security#storing-sensitive-info).
+
 
 ## License
 
@@ -61,3 +68,4 @@ Distributed under the MIT License.
 
 - Email - ivanmolto@gmail.com
 - Discord - ivanmolto#3768
+
