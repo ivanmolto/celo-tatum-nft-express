@@ -28,7 +28,7 @@ export const ThemeProvider = ({ children }) => {
 			marginVertical: 20,
 			height: 1,
 			width: "85%",
-			backgroundColor: "#ffffff44",
+			backgroundColor: "#00000044",
 		},
 		externalLink: {
 			color: Colors[colorScheme].text,
