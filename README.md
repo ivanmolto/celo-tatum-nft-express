@@ -51,6 +51,15 @@ yarn install
 npm start
 ```
 
+## Tatum's NFT Express
+
+NFT Express allows you to mint NFTs without coding, deploying smart contracts, sending private keys, or holding crypto to pay for gas fees.
+
+Use NFT Express to mint NFTs easily with a single API call.
+
+The Valora app is only used to get a Celo address to send the NFT. 
+
+
 ## Security Notice
 
 The project is not audited and should not be used in a production environment.
