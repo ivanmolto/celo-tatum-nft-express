@@ -16,7 +16,7 @@ export default function LoginScreen({
 				imageStyle={styles.backgroundImage}
 			> 	
 				<TouchableOpacity  style={{ backgroundColor: "#006243", marginRight: 70, marginLeft: 70 }} onPress={() => connector.connect()} >
-          <Text style={{ fontSize: 16, fontWeight: "bold", textAlign: "center" }} >
+          <Text style={{ fontSize: 16, fontWeight: "bold", textAlign: "center", color: "white" }} >
 						Connect Wallet
 					</Text>
         </TouchableOpacity>
