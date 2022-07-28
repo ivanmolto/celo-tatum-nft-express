@@ -12,8 +12,8 @@ const { withWalletConnect } = require("@walletconnect/react-native-dapp");
 registerRootComponent(
 	withWalletConnect(App, {
 		clientMeta: {
-			name: "Celo Composer React Native",
-			description: "React Native Starter Project to build on Celo",
+			name: "Safari Mixer",
+			description: "An eco-friendly NFT minter powered by Celo and Tatum",
 		},
 		redirectUrl:
 			Platform.OS === "web" ? window.location.origin : `${scheme}://`,
