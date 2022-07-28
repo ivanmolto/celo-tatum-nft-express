@@ -1,8 +1,7 @@
 import { useWalletConnect } from "@walletconnect/react-native-dapp";
-import { StyleSheet } from "react-native";
+import { ImageBackground, Button, StyleSheet } from "react-native";
 import { RootStackScreenProps } from "../types";
 import { Text, View, TouchableOpacity } from "../components/Themed";
-import Colors from "../constants/Colors";
 
 export default function LoginScreen({
 	navigation,
@@ -10,9 +9,18 @@ export default function LoginScreen({
 	const connector = useWalletConnect();
 	return (
 		<View style={styles.container}>
-			<TouchableOpacity onPress={() => connector.connect()}>
-				<Text style={{ fontSize: 16 }}>Connect Wallet</Text>
-			</TouchableOpacity>
+			<ImageBackground
+				source={require('./assets/images/background.png')}
+				resizeMode="cover"
+				style={styles.rootScreen}
+				imageStyle={styles.backgroundImage}
+			> 	
+				<TouchableOpacity  style={{ backgroundColor: "#006243", marginRight: 70, marginLeft: 70 }} onPress={() => connector.connect()} >
+          <Text style={{ fontSize: 16, fontWeight: "bold", textAlign: "center" }} >
+						Connect Wallet
+					</Text>
+        </TouchableOpacity>
+      </ImageBackground>
 		</View>
 	);
 }
@@ -20,11 +28,13 @@ export default function LoginScreen({
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		alignItems: "center",
-		justifyContent: "center",
 	},
-	title: {
-		fontSize: 20,
-		fontWeight: "bold",
-	},
+	rootScreen: {
+    flex: 1,
+		justifyContent: "center"
+  },
+  backgroundImage: {
+    flex: 1,
+    justifyContent: "center"
+  },
 });
